@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.appbrewery.destini"
+    package="co.appbrewery.destinichallengestarting"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -25,9 +25,9 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Destini" >
+        android:label="destini_challenge_starting" >
         <activity
-            android:name="co.appbrewery.quizzler.MainActivity"
+            android:name="co.appbrewery.destinichallengestarting.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
