@@ -19,7 +19,6 @@ class StoryPage extends StatefulWidget {
 }
 
 class _StoryPageState extends State<StoryPage> {
-  int storyNumber = 0;
   @override
 
   Widget build(BuildContext context) {
@@ -41,7 +40,7 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 12,
                 child: Center(
                   child: Text(
-                    storyBrain.getStory(storyNumber),
+                    storyBrain.getStory(),
                     style: TextStyle(
                       fontSize: 25.0,
                     ),
@@ -52,7 +51,7 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 2,
                 child: TextButton(
                   child: Text(
-                    storyBrain.getChoice1(1),
+                    storyBrain.getChoice1(),
                     style: TextStyle(
                       fontSize: 20.0,
                     ),
@@ -78,7 +77,7 @@ class _StoryPageState extends State<StoryPage> {
                   visible: storyBrain.buttonShouldBeVisible(),
                   child: TextButton(
                     child: Text(
-                      storyBrain.getChoice2(2),
+                      storyBrain.getChoice2(),
                       style: TextStyle(
                         fontSize: 20.0,
                       ),

@@ -30,16 +30,16 @@ class StoryBrain {
       '')
   ];
 
-  getStory(storyNumber) {
-    return _storyData[nextStory(storyNumber)].storyTitle;
+  getStory() {
+    return _storyData[_storyNumber].storyTitle;
   }
 
-  getChoice1(storyNumber) {
-    return _storyData[nextStory(storyNumber)].choice1;
+  getChoice1() {
+    return _storyData[_storyNumber].choice1;
   }
 
-  getChoice2(storyNumber) {
-    return _storyData[nextStory(storyNumber)].choice2;
+  getChoice2() {
+    return _storyData[_storyNumber].choice2;
   }
 
   nextStory(int userChoice) {
